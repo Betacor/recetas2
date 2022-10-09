@@ -60,7 +60,8 @@ def update_recipe():
 
     #Verificar que todos los datos esten correctos
     if not Recipe.valida_receta(request.form):
-        return redirect('/edit/recipe/'+request.form['recipe_id']) # redirige a /edit/recipe/1
+        print ('HOLI ' +request.form['id'] )
+        return redirect('/edit/recipe/'+request.form['id']) # redirige a /edit/recipe/1
 
     #Guardar los cambios
     Recipe.update(request.form)
