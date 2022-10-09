@@ -23,7 +23,10 @@
         </header>
         
         <div class="row justify-content-evenly mt-3">
+            
             <div class="left_column col-6 text-white">
+                <h1 class="mb-3 text-white">Agrega tu Receta</h1>
+                
                 <!--MENSAJES-->
                 {% with messages = get_flashed_messages(category_filter=['receta']) %}
                             {% if messages %}
@@ -50,7 +53,7 @@
                     </div>
             </div>
         
-            <div class="right_column col-3 text-white">
+            <div class="right_column col-3 text-white mt-5">
                 
                     <div class="form-group">
                         <label for="date_made">Fecha de Creación</label>
